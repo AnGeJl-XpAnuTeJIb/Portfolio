@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самир - Веб-разработчик</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Самир</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Главная</a></li>
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#skills" class="nav-link">Навыки</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="imgs/ava.jpg" alt="Самир" class="avatar">
+                <h1>Привет, я <span class="gradient-text">Самир</span></h1>
+                <p class="subtitle">Веб-разработчик • 14 лет</p>
+                <a href="#projects" class="btn">Смотреть работы</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <p>
+                    Привет! Меня зовут Самир, мне 14 лет. 7 июня 2026 исполнится 15.
+                    Учусь веб-разработке: верстаю сайты, пишу скрипты на PHP и JavaScript.
+                    Хочу стать крутым программистом.
+                </p>
+                <div class="info-tags">
+                    <span class="tag"><i class="bi bi-rocket-takeoff-fill"></i> Учусь, ищу первый проект</span>
+                    <span class="tag"><i class="bi bi-code-slash"></i> Учу PHP и JS</span>
+                    <span class="tag"><i class="bi bi-controller"></i> Люблю игры</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Что я умею</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="bi bi-filetype-html"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-filetype-css"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-filetype-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-filetype-php"></i>
+                    <p>PHP</p>
+                </div>
+                <div class="skill-card">
+                    <i class="bi bi-bootstrap-fill"></i>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Мои проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="imgs/bio.jfif" alt="Сайт-портфолио">
+                    <div class="project-content">
+                        <h3>Сайт-портфолио</h3>
+                        <p>Этот сайт. Собрал на PHP и Bootstrap, чтобы показать свои работы.</p>
+                        <div class="project-tags">
+                            <span class="badge">PHP</span>
+                            <span class="badge">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Связаться</h2>
+            <p class="contact-subtitle">Пиши, есть проект или просто поболтать</p>
+            <div class="contact-links">
+                <a href="https://github.com/AnGeJl-XpAnuTeJIb" class="contact-link" target="_blank">
+                    <i class="bi bi-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://t.me/fluuxwave" class="contact-link" target="_blank">
+                    <i class="bi bi-telegram"></i>
+                    <span>Telegram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Самир, 14 лет</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
