@@ -3,166 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samir — Developer</title>
+    <title>Портфолио | Креативный разработчик</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-
-    <nav class="nav">
-        <div class="nav-logo">SAMIR</div>
-        <div class="nav-links">
-            <a href="#work" class="nav-link">Work</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </div>
-        <div class="nav-menu-btn">
-            <span></span>
-            <span></span>
-        </div>
+    <nav class="navbar">
+        <div class="nav-logo">ПОРТФОЛИО</div>
+        <ul class="nav-menu">
+            <li><a href="#hero" data-text="Главная">Главная</a></li>
+            <li><a href="#about" data-text="О себе">О себе</a></li>
+            <li><a href="#work" data-text="Работы">Работы</a></li>
+            <li><a href="#contact" data-text="Контакты">Контакты</a></li>
+        </ul>
     </nav>
 
-    <div class="mobile-menu">
-        <a href="#work" class="mobile-link">Work</a>
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#contact" class="mobile-link">Contact</a>
-    </div>
-
-    <section class="hero">
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
         <div class="hero-content">
             <h1 class="hero-title">
-                <span class="line">
-                    <span class="word">Creative</span>
-                </span>
-                <span class="line">
-                    <span class="word">Developer</span>
-                </span>
+                <span class="line">Креативный</span>
+                <span class="line">Разработчик</span>
             </h1>
-            <p class="hero-subtitle">Building digital experiences</p>
+            <p class="hero-subtitle">Создаю цифровые впечатления</p>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
-        </div>
-    </section>
-
-    <section id="work" class="work">
-        <div class="container">
-            <h2 class="section-title">Selected Work</h2>
-            <div class="work-grid">
-                <div class="work-item" data-color="#ff0844">
-                    <div class="work-image">
-                        <div class="work-image-inner" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            <span class="work-number">01</span>
-                        </div>
-                    </div>
-                    <div class="work-info">
-                        <h3>Web Applications</h3>
-                        <p>Full-stack development</p>
-                    </div>
-                </div>
-
-                <div class="work-item" data-color="#00d4ff">
-                    <div class="work-image">
-                        <div class="work-image-inner" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                            <span class="work-number">02</span>
-                        </div>
-                    </div>
-                    <div class="work-info">
-                        <h3>UI/UX Design</h3>
-                        <p>Interactive interfaces</p>
-                    </div>
-                </div>
-
-                <div class="work-item" data-color="#00ff88">
-                    <div class="work-image">
-                        <div class="work-image-inner" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                            <span class="work-number">03</span>
-                        </div>
-                    </div>
-                    <div class="work-info">
-                        <h3>Creative Coding</h3>
-                        <p>Experimental projects</p>
-                    </div>
-                </div>
-
-                <div class="work-item" data-color="#ff6b6b">
-                    <div class="work-image">
-                        <div class="work-image-inner" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                            <span class="work-number">04</span>
-                        </div>
-                    </div>
-                    <div class="work-info">
-                        <h3>API Development</h3>
-                        <p>Backend solutions</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <canvas id="canvas"></canvas>
     </section>
 
     <section id="about" class="about">
         <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">О себе</h2>
+            </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="about-description">
-                        15-летний разработчик из Украины, увлеченный созданием современных веб-приложений
-                        и интерактивных интерфейсов. Специализируюсь на full-stack разработке с фокусом
-                        на пользовательский опыт и производительность.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">7+</span>
-                            <span class="stat-label">Technologies</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">2+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                    </div>
+                    <p class="large-text">Я создаю интерактивные веб-приложения, которые объединяют дизайн, технологии и креативность.</p>
+                    <p>Специализируюсь на разработке современных интерфейсов с использованием передовых технологий. Каждый проект — это возможность создать что-то уникальное.</p>
                 </div>
                 <div class="about-skills">
-                    <div class="skill-tag">Java</div>
-                    <div class="skill-tag">Kotlin</div>
-                    <div class="skill-tag">PHP</div>
-                    <div class="skill-tag">JavaScript</div>
-                    <div class="skill-tag">TypeScript</div>
-                    <div class="skill-tag">HTML/CSS</div>
-                    <div class="skill-tag">React</div>
-                    <div class="skill-tag">Node.js</div>
+                    <div class="skill-item">
+                        <i class="bi bi-filetype-java"></i>
+                        <span class="skill-name">Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-code-square"></i>
+                        <span class="skill-name">Kotlin</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-filetype-php"></i>
+                        <span class="skill-name">PHP</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-filetype-js"></i>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-filetype-tsx"></i>
+                        <span class="skill-name">TypeScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-filetype-html"></i>
+                        <span class="skill-name">HTML/CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-filetype-jsx"></i>
+                        <span class="skill-name">React</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-node-plus"></i>
+                        <span class="skill-name">Node.js</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section><section id="work" class="work">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">Избранные работы</h2>
+        </div>
+
+        <div class="work-grid">
+            <div class="work-item">
+                <div class="work-image">
+                    <div class="work-image-inner" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <i class="bi bi-person-workspace"></i>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <h3 class="work-title">Портфолио</h3>
+                    <p class="work-category">Web Development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-links">
-                <a href="https://github.com" target="_blank" class="contact-link">
-                    <span class="contact-label">GitHub</span>
-                    <span class="contact-arrow">→</span>
-                </a>
-                <a href="https://t.me/fluuxwave" target="_blank" class="contact-link">
-                    <span class="contact-label">Telegram</span>
-                    <span class="contact-arrow">→</span>
-                </a>
-                <a href="https://discord.com" target="_blank" class="contact-link">
-                    <span class="contact-label">Discord</span>
-                    <span class="contact-arrow">→</span>
-                </a>
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Свяжитесь со мной</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>Готовы начать проект?</h3>
+                    <p>Свяжитесь со мной, чтобы обсудить ваши идеи и воплотить их в жизнь.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:hello@example.com" class="contact-link">
+                        <i class="bi bi-envelope"></i>
+                        <span class="link-text">hello@example.com</span>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="contact-link">
+                        <i class="bi bi-github"></i>
+                        <span class="link-text">GitHub</span>
+                    </a>
+                    <a href="https://t.me" target="_blank" class="contact-link">
+                        <i class="bi bi-telegram"></i>
+                        <span class="link-text">Telegram</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Samir. All rights reserved.</p>
-                <p class="footer-location">Ukraine</p>
-            </div>
+            <p>&copy; 2026 Портфолио. Создано с любовью.</p>
         </div>
     </footer>
 
